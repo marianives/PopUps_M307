@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "PopUp";
+    Layout = "~/Views/shared/template.cshtml";
+}
+
+<h2>PopUp</h2>
+
+
+<div class="tooltip1">
+    Hover over me
+    <span class="tooltiptext1">
+        <img src="~/Content/Mario_Artwork_-_Super_Mario_3D_World.png" width=250px height=300px/>
+    </span>
+</div>
+
+<style>
+
+    .tooltip1 {
+        position: relative;
+        /*display: inline-block;*/
+    }
+
+        .tooltip1 .tooltiptext1 {
+            visibility: hidden;
+            /*background-color: black;*/
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+        }
+
+        .tooltip1:hover .tooltiptext1 {
+            visibility: visible;
+        }
+</style>
+
